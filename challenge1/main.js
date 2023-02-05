@@ -39,3 +39,13 @@ const game = {
       team2: 6.5,
     },
 };
+
+const log = console.log();
+
+// yêu cầu 1:
+const [players1,players2] = game.players;
+log(players1,players2);
+
+// yêu cầu 2:
+const [gk, ...fieldPlayers] = players1;
+log(gk, fieldPlayers);
