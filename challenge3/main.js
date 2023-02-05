@@ -12,3 +12,21 @@ const gameEvents = new Map([
     [80, '⚽️ GOAL'],
     [92, '🔶 Yellow card'],
 ]);
+
+// yêu cầu 1:
+const log = console.log;
+const events = [...new Set(gameEvents.values())];
+    log(events);
+
+// yêu cầu 2:
+gameEvents.delete(64);
+
+// yêu cầu 3:
+log(
+    `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
+const time = [...gameEvents.keys()].pop();
+log(time);
+log(
+    `An event happened, on average, every ${time / gameEvents.size} minutes`
+);
