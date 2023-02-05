@@ -57,3 +57,21 @@ log(allPlayers);
 // yêu cầu 4:
 const players1Final = [...players1,'Thiago', 'Coutinho', 'Perisic'];
 // log(players1Final);
+
+// yêu cầu 5:
+const {
+    odds: {team1, x: draw , team2},
+} = game;
+log(team1,draw,team2);
+
+// yêu cầu 6:
+const printGoals = (...players) => {
+    log(players);
+    log(`${players.length} goals were scored`);
+};
+
+printGoals(...game.scored);
+
+// yêu cầu 7:
+team1 < team2 && log('Team 1 is more likely to win');
+team1 > team2 && log('Team 2 is more likely to win');
