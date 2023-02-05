@@ -44,4 +44,9 @@ const log = console.log;
 
 // yêu cầu 1:
 for(const [i, player] of game.scored.entries())
-log(`Goal ${i + 1}: ${player}`);
+    log(`Goal ${i + 1}: ${player}`);
+
+// yêu cầu 2:
+let average = 0;
+for (const odd of Object.values(game.odds))
+    average /= odds.length;
