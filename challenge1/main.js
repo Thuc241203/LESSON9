@@ -49,3 +49,11 @@ log(players1,players2);
 // yêu cầu 2:
 const [gk, ...fieldPlayers] = players1;
 log(gk, fieldPlayers);
+
+// yêu cầu 3:
+const allPlayers = [...players1,...players2];
+log(allPlayers);
+
+// yêu cầu 4:
+const players1Final = [...players1,'Thiago', 'Coutinho', 'Perisic'];
+// log(players1Final);
