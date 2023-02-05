@@ -10,7 +10,13 @@ document.querySelector('button').addEventListener
     const text =document.querySelector('textarea').value;
     const rows = text.split('\n');
     log(rows);
-    for (const row in rows) {
-        row.split('_');
+    for (const [i,row] of rows.entries()) {
+       const [first, second] = row.toLowerCase().trim().split('_');
+       const output = ` ${first}${second.replace(
+        second[0],
+        second[0].toUpperCase()
+        )}`;
+   
+       log(`${output.padEnd(20)}${'✅'.repeat(i+1)}`);
     }
 });
