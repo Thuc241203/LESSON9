@@ -30,3 +30,9 @@ log(time);
 log(
     `An event happened, on average, every ${time / gameEvents.size} minutes`
 );
+
+// yêu cầu 4:
+for (const [min,event] of gameEvents){
+    const half = min <= 45 ? 'FIRST' : 'SECOND';
+    log(`[${half} HALF] ${min}: ${event}`);
+};
