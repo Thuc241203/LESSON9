@@ -40,7 +40,7 @@ const game = {
     },
 };
 
-const log = console.log();
+const log = console.log;
 
 // yêu cầu 1:
 const [players1,players2] = game.players;
